@@ -49,7 +49,7 @@ const ProductDetails = () => {
               className="mb-3 bg-primary py-4 px-8 text-white text-base"
               onClick={() => addToCart(product, product.id)}
             >
-              Add to chart
+              Add to cart
             </button>
           </div>
         </div>

@@ -10,10 +10,12 @@ const Navbar = () => {
   const { isOpen, setIsOpen } = useContext(SidebarContext);
   const { itemAmount } = useContext(CartContext);
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const handleScroll = () => {
       window.scrollY > 60 ? setIsActive(true) : setIsActive(false);
-    });
-  });
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <header
       className={`${

@@ -1,38 +1,81 @@
-# E-commerce - React & Tailwind 🛒👜🛒👜
+# E-commerce Website 🛒
 
-![preview](./.github/preview_intro.gif)
+A modern, responsive e-commerce website built with React and Tailwind CSS.
 
-> # Description 
+## ✨ Features
 
-This project is a responsive e-commerce website. The user can: view information about each product, filter products by category, and add / remove products from the cart. 
-I styled the landing page with Tailwind CSS and built it with React Js. Also, Tailwind CSS helped with the responsiveness of the website.   
-I created the routes to the other pages with react-router-dom.
-The products data were fetched from [Fake Store API](https://fakestoreapi.com/).   
+- **Product Catalog** — Browse products fetched from the Fake Store API
+- **Category Filtering** — Filter products by category with smooth transitions
+- **Shopping Cart** — Add, remove, and adjust product quantities
+- **Product Details** — View detailed information for each product
+- **Responsive Design** — Fully responsive across all devices
+- **Smooth Animations** — Hover effects and transitions for a premium feel
 
+## 🛠️ Tech Stack
 
-![preview](./.github/preview_products.gif)
+| Technology | Purpose |
+|---|---|
+| React 18 | UI Framework |
+| Tailwind CSS 3 | Styling |
+| React Router v6 | Client-side routing |
+| Vite | Build tool & dev server |
+| Fake Store API | Product data source |
 
-![preview](./.github/preview_responsiveness.gif)
+## 📦 Getting Started
 
-Available here: [React E-commerce - Vítor F. Nery](https://react-ecommerce-vitorfnery.netlify.app/)
+### Prerequisites
 
-## 🛠️ Technologies 
+- Node.js (v16 or higher)
+- npm
 
-- React 
-- Tailwind CSS
-- Git and Github
+### Installation
 
-## Prerequisites
+```bash
+# Clone the repository
+git clone https://github.com/Arihantdesai165/Ecommerce_website.git
 
-- Node.js
-- NPM
+# Navigate to the project
+cd Ecommerce_website
 
-## Installation
+# Install dependencies
+npm install
 
-1. Clone the repository: `git clone git@github.com:vitorfnery/ecommerce-website.git`
-2. Navigate to the project directory: `cd your_project`
-3. Install the dependencies: `npm install`
+# Start development server
+npm run dev
+```
 
-## Usage
+The app will be running at `http://localhost:5173/`
 
-- Start the development server: `npm run dev`
+### Build for Production
+
+```bash
+npm run build
+```
+
+## 📁 Project Structure
+
+```
+src/
+├── assets/          # Static assets (images, SVGs)
+├── components/      # Reusable UI components
+│   ├── CartItem/    # Cart item component
+│   ├── FilterButton/# Category filter button
+│   └── Product/     # Product card component
+├── constants/       # App-wide constants
+├── containers/      # Layout containers
+│   ├── Footer/      # Footer section
+│   ├── Hero/        # Hero banner
+│   ├── Navbar/      # Navigation bar
+│   ├── ProductsFilter/ # Filter bar
+│   └── Sidebar/     # Shopping cart sidebar
+├── contexts/        # React contexts (Cart, Product, Sidebar)
+└── pages/           # Page components (Home, ProductDetails, 404)
+```
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+Made with ❤️ by [Arihant Desai](https://github.com/Arihantdesai165)

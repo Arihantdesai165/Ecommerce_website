@@ -11,7 +11,7 @@ const CartProvider = ({ children }) => {
       return accumulator + currentItem.price * currentItem.amount;
     }, 0);
     setTotal(parseFloat(total).toFixed(2));
-  });
+  }, [cart]);
   useEffect(() => {
     if (cart) {
       const amount = cart.reduce((accumulator, currentItem) => {

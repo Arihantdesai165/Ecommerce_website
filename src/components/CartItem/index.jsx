@@ -19,7 +19,7 @@ const CartItem = ({ item }) => {
     >
       <div className="w-full min-h-[150px] flex items-center gap-x-4">
         <Link to={`/product/${id}`}>
-          <img className="max-w-[80px]" src={image} alt="" />
+          <img className="max-w-[80px]" src={image} alt={title} />
         </Link>
         <div className="w-full flex flex-col">
           <div className="flex justify-between mb-2">

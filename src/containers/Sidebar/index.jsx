@@ -56,13 +56,13 @@ const Sidebar = () => {
         </div>
         <Link
           to={"/"}
-          className="bg-gray-200 flex p-4 justify-center items-center text-primary w-full font-medium"
+          className="bg-gray-200 flex p-4 justify-center items-center text-primary w-full font-medium hover:bg-gray-300 transition-colors duration-300"
         >
           View Cart
         </Link>
         <Link
           to={"/"}
-          className="bg-primary flex p-4 justify-center items-center text-white w-full font-medium"
+          className="bg-primary flex p-4 justify-center items-center text-white w-full font-medium hover:bg-gray-800 transition-colors duration-300"
         >
           Checkout
         </Link>

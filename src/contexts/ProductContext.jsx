@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect } from "react";
+import { createContext, useState, useEffect, useMemo } from "react";
 
 export const ProductContext = createContext();
 
@@ -28,8 +28,14 @@ const ProductProvider = ({ children }) => {
     fetchProducts();
   }, []);
 
+  const contextValue = useMemo(() => ({
+    products,
+    isLoading,
+    error,
+  }), [products, isLoading, error]);
+
   return (
-    <ProductContext.Provider value={{ products, isLoading, error }}>
+    <ProductContext.Provider value={contextValue}>
       {children}
     </ProductContext.Provider>
   );

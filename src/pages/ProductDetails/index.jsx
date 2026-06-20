@@ -31,6 +31,7 @@ const ProductDetails = () => {
                         "
               src={image}
               alt={description}
+              loading="lazy"
             />
           </div>
           <div className="flex-1 text-center lg:text-left">

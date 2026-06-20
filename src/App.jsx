@@ -12,11 +12,13 @@ const App = () => {
     <div className="overflow-hidden">
       <ScrollToTop />
       <Navbar />
-      <Routes>
-        <Route index path="/" element={<Home />} />
-        <Route path="/product/:id" element={<ProductDetails />} />
-        <Route path="*" element={<NoPage />} />
-      </Routes>
+      <main className="flex-1">
+        <Routes>
+          <Route index path="/" element={<Home />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
+          <Route path="*" element={<NoPage />} />
+        </Routes>
+      </main>
       <Sidebar />
       <Footer />
     </div>

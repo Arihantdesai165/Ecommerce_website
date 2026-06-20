@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { HiPlusSmall, HiEye } from "react-icons/hi2";
 import { CartContext } from "~contexts/CartContext";
+import { formatCurrency } from "~/utils/formatCurrency";
 
 const Product = ({ product }) => {
   const { addToCart } = useContext(CartContext);
@@ -44,7 +45,7 @@ const Product = ({ product }) => {
         <Link to={`/product/${id}`}>
           <h2 className="font-semibold mb-1">{title}</h2>
         </Link>
-        <h2 className="font-semibold">$ {price}</h2>
+        <h2 className="font-semibold">{formatCurrency(price)}</h2>
       </div>
     </div>
   );

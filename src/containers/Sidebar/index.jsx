@@ -5,6 +5,7 @@ import CartItem from "~components/CartItem";
 import { SidebarContext } from "~contexts/SidebarContext";
 import { CartContext } from "~contexts/CartContext";
 import { useContext } from "react";
+import { formatCurrency } from "~/utils/formatCurrency";
 
 const Sidebar = () => {
   const { isOpen, handleClose } = useContext(SidebarContext);
@@ -41,7 +42,7 @@ const Sidebar = () => {
       <div className="flex flex-col gap-y-3 py-4 mt-4">
         <div className="flex w-full justify-between items-center">
           <div className="uppercase text-semibold">
-            <span className="mr-2">Total:</span>$ {total}
+            <span className="mr-2">Total:</span>{formatCurrency(total)}
           </div>
           <div
             className="

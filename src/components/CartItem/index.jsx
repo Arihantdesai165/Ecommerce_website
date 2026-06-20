@@ -2,13 +2,13 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { IoMdAdd, IoMdClose, IoMdRemove } from "react-icons/io";
 import { CartContext } from "~contexts/CartContext";
+import { formatCurrency } from "~/utils/formatCurrency";
 
 const CartItem = ({ item }) => {
   const { removeFromCart, increaseAmount, decreaseAmount } =
     useContext(CartContext);
   const { id, title, image, price, amount } = item;
-  const getFinalPrice = (price, amount) =>
-    parseFloat(price * amount).toFixed(2);
+  const getFinalPrice = (price, amount) => price * amount;
   return (
     <div
       className="
@@ -60,12 +60,12 @@ const CartItem = ({ item }) => {
               </div>
             </div>
             <div className="flex-1 flex items-center justify-around">
-              $ {price}
+              {formatCurrency(price)}
             </div>
-            <div className="flex-1 flex justify-end items-center text-primary font-medium">{`$ ${getFinalPrice(
+            <div className="flex-1 flex justify-end items-center text-primary font-medium">{`${formatCurrency(getFinalPrice(
               price,
               amount
-            )}`}</div>
+            ))}`}</div>
           </div>
         </div>
       </div>

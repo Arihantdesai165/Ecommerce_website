@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { CartContext } from "~contexts/CartContext";
 import { ProductContext } from "~contexts/ProductContext";
+import { formatCurrency } from "~/utils/formatCurrency";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -42,7 +43,7 @@ const ProductDetails = () => {
               {title}
             </h1>
             <div className="text-base md:text-lg lg:text-xl text-red-500 font-medium mb-6">
-              $ {price}
+              {formatCurrency(price)}
             </div>
             <p className="mb-8 text-sm">{description}</p>
             <button

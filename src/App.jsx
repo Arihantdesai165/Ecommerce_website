@@ -5,10 +5,12 @@ import Sidebar from "~containers/Sidebar";
 import Home from "~pages/Home";
 import NoPage from "~pages/NoPage";
 import ProductDetails from "~pages/ProductDetails";
+import ScrollToTop from "~/components/ScrollToTop";
 
 const App = () => {
   return (
     <div className="overflow-hidden">
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route index path="/" element={<Home />} />

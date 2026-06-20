@@ -5,7 +5,7 @@ import ProductsFilter from "~containers/ProductsFilter";
 import { ProductContext } from "~contexts/ProductContext";
 
 const Home = () => {
-  const { products } = useContext(ProductContext);
+  const { products, isLoading } = useContext(ProductContext);
   const [items, setItems] = useState([]);
   useEffect(() => {
     setItems(products);
@@ -22,7 +22,13 @@ const Home = () => {
     <div>
       <Hero />
       <section className="py-16">
-        <div className="w-full mb-4">
+        {isLoading ? (
+          <div className="container mx-auto flex justify-center items-center h-[400px]">
+            <div className="text-2xl font-semibold text-gray-500 animate-pulse">Loading products...</div>
+          </div>
+        ) : (
+          <>
+            <div className="w-full mb-4">
           <ProductsFilter
             setItems={setItems}
             menuItems={menuItems}
@@ -42,6 +48,8 @@ const Home = () => {
             })}
           </div>
         </div>
+        </>
+        )}
       </section>
     </div>
   );

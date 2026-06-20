@@ -34,7 +34,8 @@ const Hero = () => {
           <img
             className="-mt-[33%] max-h-[920px] max-w-[420px] xl:max-w-none"
             src={ManImg}
-            alt="Man"
+            alt="Man in autumn sale fashion"
+            fetchpriority="high"
           />
         </div>
       </div>

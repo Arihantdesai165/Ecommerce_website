@@ -29,12 +29,12 @@ const Product = ({ product }) => {
                     "
         >
           <button onClick={() => addToCart(product, id)}>
-            <div className="flex justify-center items-center text-white w-12 h-12 bg-red-500">
+            <div className="flex justify-center items-center text-white w-12 h-12 bg-red-500 hover:bg-red-700 transition-colors duration-300">
               <HiPlusSmall className="text-3xl" />
             </div>
           </button>
           <Link
-            className="w-12 h-12 bg-white flex justify-center items-center text-primary drop-shadow-xl"
+            className="w-12 h-12 bg-white flex justify-center items-center text-primary drop-shadow-xl hover:text-red-500 transition-colors duration-300"
             to={`/product/${id}`}
           >
             <HiEye />

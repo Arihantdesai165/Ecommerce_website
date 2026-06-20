@@ -25,6 +25,7 @@ const Hero = () => {
           <Link
             to={"/"}
             className="self-start uppercase font-semibold border-b-2 border-primary"
+            aria-label="Discover more products in our autumn sale"
           >
             {description}
           </Link>

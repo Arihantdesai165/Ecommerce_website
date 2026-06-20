@@ -28,9 +28,10 @@ const Navbar = () => {
             <img className="max-w-[40px]" src={Logo} alt="" />
           </Link>
         </div>
-        <div
+        <button
           onClick={() => setIsOpen(!isOpen)}
           className="cursor-pointer flex relative"
+          aria-label="Open shopping cart"
         >
           <BsBag className="text-2xl" />
           <div
@@ -42,7 +43,7 @@ const Navbar = () => {
           >
             {itemAmount}
           </div>
-        </div>
+        </button>
       </nav>
     </header>
   );

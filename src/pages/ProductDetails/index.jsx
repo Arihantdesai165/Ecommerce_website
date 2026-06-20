@@ -48,7 +48,7 @@ const ProductDetails = () => {
             </div>
             <p className="mb-8 text-sm">{description}</p>
             <button
-              className="mb-3 bg-primary py-4 px-8 text-white text-base"
+              className="mb-3 bg-primary py-4 px-8 text-white text-base hover:bg-gray-800 transition-colors duration-300"
               onClick={() => addToCart(product, product.id)}
             >
               Add to cart

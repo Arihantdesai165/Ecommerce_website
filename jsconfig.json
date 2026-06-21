@@ -31,6 +31,12 @@
             ],
             "~FilterButton/*": [
                 "src/components/FilterButton/*"
+            ],
+            "~utils/*": [
+                "src/utils/*"
+            ],
+            "~ScrollToTop/*": [
+                "src/components/ScrollToTop/*"
             ]
         }
     }

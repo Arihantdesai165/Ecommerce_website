@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const NoPage = () => {
   return (
-    <section className="h-screen flex flex-col justify-center items-center gap-6 bg-white">
+    <section role="main" className="h-screen flex flex-col justify-center items-center gap-6 bg-white">
       <div className="text-center">
         <h1 className="text-9xl font-bold text-primary">404</h1>
         <p className="text-2xl font-semibold text-gray-600 mt-4">

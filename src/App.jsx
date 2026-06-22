@@ -18,6 +18,7 @@ const App = () => {
         <Routes>
           <Route index path="/" element={<Home />} />
           <Route path="/product/:id" element={<ProductDetails />} />
+          {/* Fallback route */}
           <Route path="*" element={<NoPage />} />
         </Routes>
       </main>

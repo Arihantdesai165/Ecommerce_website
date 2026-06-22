@@ -22,7 +22,7 @@ const Accordion = ({ items }) => {
             <span>{activeIndex === index ? '-' : '+'}</span>
           </button>
           {activeIndex === index && (
-            <div className="px-4 py-3 bg-white text-gray-700">
+            <div id={`accordion-content-${index}`} className="px-4 py-3 bg-white text-gray-700">
               {item.content}
             </div>
           )}

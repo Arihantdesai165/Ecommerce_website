@@ -1,6 +1,7 @@
 {
   "name": "ecommerce-website",
   "private": true,
+  "description": "Ecommerce website built with React",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

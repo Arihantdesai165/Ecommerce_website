@@ -4,7 +4,7 @@ const NoPage = () => {
   return (
     <section role="main" className="h-screen flex flex-col justify-center items-center gap-6 bg-white">
       <div className="text-center">
-        <h1 className="text-9xl font-bold text-primary">404</h1>
+        <h1 className="text-9xl font-bold text-primary" aria-hidden="true">404</h1>
         <p className="text-2xl font-semibold text-gray-600 mt-4">
           Page Not Found
         </p>

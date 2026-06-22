@@ -7,6 +7,7 @@ import NoPage from "~pages/NoPage";
 import ProductDetails from "~pages/ProductDetails";
 import ScrollToTop from "~/components/ScrollToTop";
 
+// Main App Component
 const App = () => {
   return (
     <div className="overflow-hidden">

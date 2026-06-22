@@ -12,6 +12,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <SidebarProvider>
     <CartProvider>
       <ProductProvider>
+        {/* React Strict Mode Wrapper */}
         <React.StrictMode>
           <BrowserRouter>
             <App />

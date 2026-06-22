@@ -12,7 +12,7 @@ const NoPage = () => {
           Sorry, the page you are looking for doesn&apos;t exist or has been moved.
         </p>
       </div>
-      <Link
+      <Link aria-label="Go back to home page"
         to="/"
         className="bg-primary text-white py-3 px-8 font-medium hover:bg-gray-800 transition-colors duration-300"
       >

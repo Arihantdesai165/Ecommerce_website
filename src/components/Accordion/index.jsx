@@ -13,6 +13,7 @@ const Accordion = ({ items }) => {
       {items.map((item, index) => (
         <div key={index}>
           <button
+            aria-expanded={activeIndex === index}
             className="w-full text-left px-4 py-3 bg-gray-50 hover:bg-gray-100 font-medium focus:outline-none flex justify-between items-center"
             onClick={() => toggleIndex(index)}
           >

@@ -14,6 +14,7 @@ const App = () => {
       <ScrollToTop />
       <Navbar />
       <main className="flex-1">
+        {/* Main Routing */}
         <Routes>
           <Route index path="/" element={<Home />} />
           <Route path="/product/:id" element={<ProductDetails />} />

@@ -30,4 +30,8 @@ const Accordion = ({ items }) => {
   );
 };
 
+Accordion.propTypes = {
+  items: PropTypes.array.isRequired,
+};
+
 export default Accordion;

@@ -19,7 +19,7 @@ const Hero = () => {
             <span>{prev}</span>
           </div>
           <div className="text-4xl xs:text-5xl sm:text-6xl xl:text-[70px] leading-[1.1] font-light mb-4 uppercase">
-            <h1>{saleTitle}</h1>
+            <h1 id="hero-title">{saleTitle}</h1>
             <p>{underTitle}</p>
             <p className="font-semibold">{content}</p>
           </div>

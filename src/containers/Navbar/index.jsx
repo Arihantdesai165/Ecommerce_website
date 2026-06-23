@@ -1,3 +1,4 @@
+// Navbar Header Component
 import { useContext, useEffect, useState } from "react";
 import { SidebarContext } from "~contexts/SidebarContext";
 import { CartContext } from "~contexts/CartContext";

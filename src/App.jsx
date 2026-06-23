@@ -10,7 +10,7 @@ import ScrollToTop from "~/components/ScrollToTop";
 // Main App Component
 const App = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="app-container overflow-hidden">
       <ScrollToTop />
       <Navbar />
       <main className="flex-1">

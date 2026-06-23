@@ -23,7 +23,7 @@ const Navbar = () => {
         isActive ? "bg-white py-4 shadow-md" : "bg-none py-6"
       } fixed w-full z-10 transition-all`}
     >
-      <nav className="container px-[3%] mx-auto flex items-center justify-between h-full">
+      <nav role="navigation" className="container px-[3%] mx-auto flex items-center justify-between h-full">
         <div className="flex items-center gap-3">
           <Link to={"/"}>
             <img className="max-w-[40px]" src={Logo} alt="" />

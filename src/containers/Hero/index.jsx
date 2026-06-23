@@ -6,7 +6,7 @@ import ManImg from "~assets/man_hero.png";
 const Hero = () => {
   const { prev, saleTitle, underTitle, content, description } = HERO_INFO;
   return (
-    <section role="banner"
+    <section aria-labelledby="hero-title" role="banner"
       className="
                 h-[800px] bg-hero 
                 bg-no-repeat bg-cover bg-center py-24

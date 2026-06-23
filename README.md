@@ -91,3 +91,7 @@ Made with ❤️ by [Arihant Desai](https://github.com/Arihantdesai165)
 npm install
 npm run dev
 ```
+
+
+## Usage
+Open the provided local server URL in your browser to view the application.

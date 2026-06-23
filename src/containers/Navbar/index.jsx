@@ -26,7 +26,7 @@ const Navbar = () => {
       <nav aria-label="Main Navigation" role="navigation" className="container px-[3%] mx-auto flex items-center justify-between h-full">
         <div className="flex items-center gap-3">
           <Link to={"/"}>
-            <img className="max-w-[40px]" src={Logo} alt="" />
+            <img className="max-w-[40px]" src={Logo} alt="E-commerce Store Logo" />
           </Link>
         </div>
         <button

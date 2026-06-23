@@ -36,6 +36,7 @@ const Navbar = () => {
         >
           <BsBag className="text-2xl" />
           <div
+            aria-live="polite"
             className="
           bg-red-500 absolute -right-2 -bottom-2 
           text-[12px] w-[18px] h-[18px] text-white

@@ -1,3 +1,4 @@
+// Footer Container Component
 import { FOOTER_INFO } from "~/constants";
 
 const Footer = () => {

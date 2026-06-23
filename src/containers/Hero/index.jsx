@@ -36,7 +36,7 @@ const Hero = () => {
             className="-mt-[33%] max-h-[920px] max-w-[420px] xl:max-w-none"
             src={ManImg}
             alt="Man in autumn sale fashion"
-            fetchpriority="high"
+            fetchpriority="high" loading="eager"
           />
         </div>
       </div>

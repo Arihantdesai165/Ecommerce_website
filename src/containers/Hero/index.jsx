@@ -1,3 +1,4 @@
+// Hero Section Component
 import { Link } from "react-router-dom";
 import { HERO_INFO } from "~/constants";
 import ManImg from "~assets/man_hero.png";

@@ -84,3 +84,10 @@ Made with ❤️ by [Arihant Desai](https://github.com/Arihantdesai165)
 - Modern UI
 - Fully Responsive
 - React Router
+
+
+## Installation
+```bash
+npm install
+npm run dev
+```

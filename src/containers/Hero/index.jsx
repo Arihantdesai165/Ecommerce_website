@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="container mx-auto flex justify-around h-full">
         <div className="flex flex-col justify-center">
           <div className="font-semibold flex items-center uppercase">
-            <div className="w-10 h-[2px] bg-red-500 mr-3"></div>
+            <div aria-hidden="true" className="w-10 h-[2px] bg-red-500 mr-3"></div>
             <span>{prev}</span>
           </div>
           <div className="text-4xl xs:text-5xl sm:text-6xl xl:text-[70px] leading-[1.1] font-light mb-4 uppercase">

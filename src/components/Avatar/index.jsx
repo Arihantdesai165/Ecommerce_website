@@ -17,3 +17,5 @@ const Avatar = ({ src, alt = 'Avatar', size = 'md' }) => {
 };
 
 export default Avatar;
+
+/* minor update 3 */

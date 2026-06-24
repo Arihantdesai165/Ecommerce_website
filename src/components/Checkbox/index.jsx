@@ -16,3 +16,5 @@ const Checkbox = ({ label, checked, onChange, disabled = false }) => {
 };
 
 export default Checkbox;
+
+/* minor update 9 */

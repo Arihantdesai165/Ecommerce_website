@@ -18,3 +18,5 @@ const Breadcrumbs = ({ items }) => {
 };
 
 export default Breadcrumbs;
+
+/* minor update 5 */

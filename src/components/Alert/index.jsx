@@ -16,3 +16,5 @@ const Alert = ({ children, type = 'info' }) => {
 };
 
 export default Alert;
+
+/* minor update 2 */

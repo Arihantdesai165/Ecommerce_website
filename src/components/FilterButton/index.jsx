@@ -23,3 +23,5 @@ const FilterButton = ({ content, onClick, selectedCategory }) => {
   );
 };
 export default FilterButton;
+
+/* minor update 11 */

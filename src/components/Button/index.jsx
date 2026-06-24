@@ -14,3 +14,5 @@ const Button = ({ children, onClick, type = 'button', className = '', disabled =
 };
 
 export default Button;
+
+/* minor update 6 */

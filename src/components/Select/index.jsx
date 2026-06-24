@@ -21,3 +21,5 @@ const Select = ({ label, options, value, onChange, required = false }) => {
 };
 
 export default Select;
+
+/* minor update 18 */

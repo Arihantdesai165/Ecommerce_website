@@ -19,3 +19,5 @@ const ProgressBar = ({ progress, color = 'blue' }) => {
 };
 
 export default ProgressBar;
+
+/* minor update 16 */

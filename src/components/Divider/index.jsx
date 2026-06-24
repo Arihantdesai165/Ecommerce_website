@@ -7,3 +7,5 @@ const Divider = ({ className = '' }) => {
 };
 
 export default Divider;
+
+/* minor update 10 */

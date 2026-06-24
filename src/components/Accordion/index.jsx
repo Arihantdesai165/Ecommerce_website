@@ -37,3 +37,5 @@ Accordion.propTypes = {
 };
 
 export default Accordion;
+
+/* minor update 1 */

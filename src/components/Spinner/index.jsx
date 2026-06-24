@@ -13,3 +13,5 @@ const Spinner = ({ size = 'md' }) => {
 };
 
 export default Spinner;
+
+/* minor update 20 */

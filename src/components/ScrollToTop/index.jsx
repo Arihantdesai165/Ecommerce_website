@@ -14,3 +14,5 @@ const ScrollToTop = () => {
 export default ScrollToTop;
 
 /* minor update 17 */
+
+// Component enhancement update 16

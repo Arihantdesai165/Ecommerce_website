@@ -1,5 +1,13 @@
 import React from 'react';
 
+/**
+ * Modal component for displaying overlay dialogs.
+ * @param {Object} props - Component props.
+ * @param {boolean} props.isOpen - Whether the modal is visible.
+ * @param {Function} props.onClose - Handler called when the modal is closed.
+ * @param {string} props.title - Modal heading text.
+ * @param {React.ReactNode} props.children - Modal body content.
+ */
 const Modal = ({ isOpen, onClose, title, children }) => {
   if (!isOpen) return null;
 

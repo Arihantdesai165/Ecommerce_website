@@ -1,5 +1,10 @@
 import React from 'react';
 
+/**
+ * Spinner component for indicating a loading state.
+ * @param {Object} props - Component props.
+ * @param {string} props.size - Size of the spinner (sm, md, lg).
+ */
 const Spinner = ({ size = 'md' }) => {
   const sizeClasses = {
     sm: 'w-4 h-4 border-2',

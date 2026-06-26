@@ -1,5 +1,15 @@
 import React from 'react';
 
+/**
+ * TextArea component for collecting multi-line user input.
+ * @param {Object} props - Component props.
+ * @param {string} props.label - Label text above the textarea.
+ * @param {string} props.value - Controlled value.
+ * @param {Function} props.onChange - Change handler.
+ * @param {string} props.placeholder - Placeholder text.
+ * @param {number} props.rows - Number of visible rows.
+ * @param {boolean} props.required - Whether the field is required.
+ */
 const TextArea = ({ label, value, onChange, placeholder = '', rows = 4, required = false }) => {
   return (
     <div className="flex flex-col mb-4">

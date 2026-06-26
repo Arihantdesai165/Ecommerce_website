@@ -1,5 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
+/**
+ * Badge component for displaying small status indicators.
+ * @param {Object} props - Component props.
+ * @param {React.ReactNode} props.children - The content of the badge.
+ * @param {string} props.color - The color theme of the badge.
+ */
 const Badge = ({ children, color = 'blue' }) => {
   const colorClasses = {
     blue: 'bg-blue-100 text-blue-800',
@@ -13,6 +20,11 @@ const Badge = ({ children, color = 'blue' }) => {
       {children}
     </span>
   );
+};
+
+Badge.propTypes = {
+  children: PropTypes.node.isRequired,
+  color: PropTypes.oneOf(['blue', 'green', 'red', 'yellow']),
 };
 
 export default Badge;

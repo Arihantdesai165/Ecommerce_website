@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 
+/**
+ * Tooltip component for showing contextual hints on hover.
+ * @param {Object} props - Component props.
+ * @param {React.ReactNode} props.children - The element that triggers the tooltip.
+ * @param {string} props.text - The text displayed inside the tooltip.
+ */
 const Tooltip = ({ children, text }) => {
   const [isVisible, setIsVisible] = useState(false);
 

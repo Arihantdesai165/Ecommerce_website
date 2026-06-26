@@ -1,5 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
+/**
+ * Alert component for displaying styled messages.
+ * @param {Object} props - Component props.
+ * @param {React.ReactNode} props.children - The content of the alert.
+ * @param {string} props.type - The type of alert (info, success, warning, error).
+ */
 const Alert = ({ children, type = 'info' }) => {
   const typeClasses = {
     info: 'bg-blue-50 text-blue-800 border-blue-200',
@@ -13,6 +20,11 @@ const Alert = ({ children, type = 'info' }) => {
       {children}
     </div>
   );
+};
+
+Alert.propTypes = {
+  children: PropTypes.node.isRequired,
+  type: PropTypes.oneOf(['info', 'success', 'warning', 'error']),
 };
 
 export default Alert;

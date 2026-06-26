@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
+/**
+ * Accordion component for displaying collapsible content sections.
+ * @param {Object} props - Component props.
+ * @param {Array} props.items - Array of accordion items with title and content.
+ */
 const Accordion = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -33,7 +38,12 @@ const Accordion = ({ items }) => {
 };
 
 Accordion.propTypes = {
-  items: PropTypes.array.isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      content: PropTypes.node.isRequired,
+    })
+  ).isRequired,
 };
 
 export default Accordion;

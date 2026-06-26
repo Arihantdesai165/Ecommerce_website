@@ -1,5 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
+/**
+ * Button component for user interactions.
+ * @param {Object} props - Component props.
+ * @param {React.ReactNode} props.children - Button content.
+ * @param {Function} props.onClick - Click handler.
+ * @param {string} props.type - Button type (button, submit, reset).
+ * @param {string} props.className - Additional CSS classes.
+ * @param {boolean} props.disabled - Whether the button is disabled.
+ */
 const Button = ({ children, onClick, type = 'button', className = '', disabled = false }) => {
   return (
     <button
@@ -11,6 +21,14 @@ const Button = ({ children, onClick, type = 'button', className = '', disabled =
       {children}
     </button>
   );
+};
+
+Button.propTypes = {
+  children: PropTypes.node.isRequired,
+  onClick: PropTypes.func,
+  type: PropTypes.oneOf(['button', 'submit', 'reset']),
+  className: PropTypes.string,
+  disabled: PropTypes.bool,
 };
 
 export default Button;

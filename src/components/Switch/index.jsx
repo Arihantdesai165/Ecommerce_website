@@ -1,5 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
+/**
+ * Switch component for toggling a boolean value.
+ * @param {Object} props - Component props.
+ * @param {boolean} props.checked - Current toggle state.
+ * @param {Function} props.onChange - Change handler.
+ * @param {string} props.label - Optional label text.
+ */
 const Switch = ({ checked, onChange, label }) => {
   return (
     <label className="flex items-center cursor-pointer">
@@ -16,6 +24,12 @@ const Switch = ({ checked, onChange, label }) => {
       {label && <div className="ml-3 text-gray-700 font-medium">{label}</div>}
     </label>
   );
+};
+
+Switch.propTypes = {
+  checked: PropTypes.bool.isRequired,
+  onChange: PropTypes.func.isRequired,
+  label: PropTypes.string,
 };
 
 export default Switch;
